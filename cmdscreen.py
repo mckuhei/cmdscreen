@@ -21,7 +21,7 @@ def MoveCursor(x,y,handle=std_out_handle):
     return Bool
 
 
-def printcolors(mess,bg=0x00,end='\n',reset=True):
+def printcolors(mess,bg=0x07,end='\n',reset=True):
     set_cmd_text_color(bg)
     sys.stdout.write(mess + end)
     if reset:
